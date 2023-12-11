@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Mi Página de HTML y CSS</title>
+</head>
+<body>
+  <header>
+    <h1>Mi Aprendizaje de HTML y CSS</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#dom">DOM</a></li>
+      <li><a href="#etiquetas">Etiquetas HTML</a></li>
+      <li><a href="#estructura">Estructura del Proyecto</a></li>
+      <li><a href="#atributos">Atributos HTML</a></li>
+      <li><a href="#formularios">Formularios HTML</a></li>
+      <li><a href="#formularios">Botones</a></li>
+      <li><a href="#navegacion">Navegación</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Parte 1: DOM y Estructura Básica -->
+    <section id="dom">
+        <h2>Modelo de Objetos del Documento (DOM)</h2>
+        <p>El DOM es una interfaz de programación para documentos HTML y XML. Representa la estructura del documento como un
+            árbol de objetos que se puede manipular con lenguajes de programación como JavaScript.</p>
+        <div class="example-box">
+            <p>Por ejemplo, considera el siguiente HTML:</p>
+            <pre>
+            <code class="html">
+              &lt;html&gt;
+                &lt;head&gt;
+                  &lt;title&gt;Mi Página&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                  &lt;h1&gt;¡Hola, Mundo!&lt;/h1&gt;
+                &lt;/body&gt;
+              &lt;/html&gt;
+            </code>
+          </pre>
+            <p>Este HTML se representa en el DOM como una estructura de nodos:</p>
+            <pre>
+            <code class="javascript">
+              Document
+              ├─ html
+              │  ├─ head
+              │  │  └─ title
+              │  │     └─ #text (Mi Página)
+              │  └─ body
+              │     └─ h1
+              │        └─ #text (¡Hola, Mundo!)
+            </code>
+          </pre>
+        </div>
+    </section>
+
+    <!-- Parte 2: Etiquetas HTML -->
+    <section id="etiquetas">
+        <h2>Etiquetas HTML</h2>
+        <p>En HTML, las etiquetas se utilizan para marcar partes específicas del contenido y darle formato. Cada etiqueta
+            tiene una sintaxis específica.</p>
+        <div class="example-box">
+            <h3>Sintaxis de Etiqueta HTML:</h3>
+            <p>&lt;etiqueta&gt;Contenido&lt;/etiqueta&gt;</p>
+            <h3>Ejemplos de Etiquetas Comunes:</h3>
+            <ul>
+                <li>&lt;p&gt; - Párrafo</li>
+                <li>&lt;a&gt; - Enlace</li>
+                <li>&lt;img&gt; - Imagen</li>
+                <li>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt; - Listas</li>
+                <li>&lt;h1&gt;, &lt;h2&gt;, ..., &lt;h6&gt; - Encabezados</li>
+                <li>&lt;div&gt; - Contenedor genérico</li>
+            </ul>
+        </div>
+        <div class="example-box">
+            <h3>Ejemplo de Etiquetas HTML:</h3>
+            <pre>
+            <code class="html">
+              &lt;body&gt;
+                &lt;h1&gt;Mi Página&lt;/h1&gt;
+                &lt;p&gt;¡Bienvenido a mi página web!&lt;/p&gt;
+                &lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;
+                &lt;a href="https://www.ejemplo.com"&gt;Enlace de Ejemplo&lt;/a&gt;
+              &lt;/body&gt;
+            </code>
+          </pre>
+        </div>
+    </section>
+  
+    <!-- Parte 3: Estructura Básica de un Proyecto -->
+    <section id="estructura">
+      <h2>Mi Aprendizaje de HTML y CSS</h2>
+      <p>La estructura básica de un proyecto HTML incluye etiquetas típicas que definen la cabeza, el cuerpo y otros elementos
+        esenciales.</p>
+        <div class="example-box">
+            <h3>Etiquetas Típicas:</h3>
+            <ul>
+                <li>&lt;!DOCTYPE html&gt; - Declaración del tipo de documento</li>
+                <li>&lt;html&gt; - Elemento raíz</li>
+                <li>&lt;head&gt; - Encabezado del documento</li>
+                <li>&lt;title&gt; - Título del documento</li>
+                <li>&lt;body&gt; - Cuerpo del documento</li>
+            </ul>
+        </div>
+        <div class="example-box">
+            <h3>Estructura Básica del Proyecto:</h3>
+            <pre>
+            <code class="html">
+              &lt;!DOCTYPE html&gt;
+              &lt;html lang="es"&gt;
+              &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;link rel="stylesheet" href="styles.css"&gt;
+                &lt;title&gt;Mi Proyecto HTML&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+                &lt;header&gt;
+                  &lt;h1&gt;Bienvenido a Mi Proyecto HTML&lt;/h1&gt;
+                &lt;/header&gt;
+                &lt;main&gt;
+                  &lt;p&gt;Este es un proyecto de ejemplo&lt;/p&gt;
+                &lt;/main&gt;
+                &lt;footer&gt;
+                  &lt;p&gt;&copy; 2023 Mi Proyecto HTML&lt;/p&gt;
+                &lt;/footer&gt;
+              &lt;/body&gt;
+              &lt;/html&gt;
+            </code>
+          </pre>
+        </div>
+    </section>
+  
+    <!-- Parte 4: Atributos HTML -->
+    <section id="atributos">
+        <h2>Atributos HTML</h2>
+        <p>Los atributos se utilizan para proporcionar información adicional sobre las etiquetas HTML. Cada atributo tiene
+            un propósito específico y se utiliza con etiquetas particulares.</p>
+        <div class="example-box">
+            <h3>Ejemplos según Etiqueta:</h3>
+            <ul>
+                <li>&lt;a&gt; - href, target</li>
+                <li>&lt;img&gt; - src, alt</li>
+                <li>&lt;input&gt; - type, name, value</li>
+                <li>&lt;div&gt; - class, id</li>
+            </ul>
+        </div>
+        <div class="example-box" id="atributo-example">
+            <h3>Ejemplo con Atributos:</h3>
+            <pre>
+            <code class="html">
+              &lt;a href="https://www.ejemplo.com" target="_blank"&gt;Enlace Externo&lt;/a&gt;
+              &lt;img src="imagen.jpg" alt="Descripción de la Imagen"&gt;
+              &lt;input type="text" name="username" value="Usuario"&gt;
+              &lt;div class="contenedor" id="miDiv"&gt;Contenido del Div&lt;/div&gt;
+            </code>
+          </pre>
+        </div>
+    </section>
+  
+    <!-- Parte 5: Formularios HTML -->
+    <section id="formularios">
+        <h2>Formularios HTML</h2>
+        <p>Los formularios permiten a los usuarios ingresar datos. Se construyen utilizando varias etiquetas HTML como
+            &lt;form&gt;, &lt;input&gt;, &lt;label&gt;, etc.</p>
+        <div class="example-box">
+            <h3>Ejemplo de Formulario:</h3>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Parte 7: Implementación de Botones -->
+    <section id="botones">
+      <h2>Implementación de Botones</h2>
+      <p>Los botones en HTML se pueden crear utilizando la etiqueta &lt;button&gt;. Pueden ser estilizados con CSS para
+        mejorar la apariencia y la interactividad.</p>
+      <div class="example-box">
+        <h3>Ejemplo de Botones</h3>
+        <button onclick="alert('¡Hola!')">Clic aquí</button>
+      </div>
+    </section>
+
+    <!-- Parte 6: Navegación entre Secciones -->
+    <section id="navegacion">
+      <h2>Navegación entre Secciones</h2>
+      <nav>
+        <ul>
+          <li><a href="#dom">Ir a DOM</a></li>
+          <li><a href="#etiquetas">Ir a Etiquetas</a></li>
+          <li><a href="#estructura">Ir a Estructura</a></li>
+          <li><a href="#atributos">Ir a Atributos</a></li>
+          <li><a href="#formularios">Ir a Formularios</a></li>
+          <li><a href="#botones">Ir a Botones</a></li>
+        </ul>
+      </nav>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Mi Página de HTML y CSS</p>
+  </footer>
+  <script>
+    document.addEventListener('keydown', function (event) {
+      switch (event.key) {
+        case 'ArrowUp':
+          window.scrollBy(0, -100);  // Desplazarse hacia arriba
+          break;
+        case 'ArrowDown':
+          window.scrollBy(0, 100);  // Desplazarse hacia abajo
+          break;
+      }
+    });
+  </script>
+</body>
+</html>
